@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/758d320ca2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./movielist.jsx" type="text/babel"></script>
+    <title>Movies List</title>
+    <style>
+      * {
+        color: #88f021;
+      }
+      body {
+        margin: 50px;
+      }
+      h1 {
+        text-align: center;
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td,
+      th {
+        border: 2px solid #78e709;
+        text-align: center;
+        padding: 20px;
+      }
+      .movie-action {
+        display: flex;
+        justify-content: space-around;
+      }
+      .box {
+        text-align: center;
+      }
+      input {
+        height: 35px;
+        background: white;
+        border: 1px solid #67cc02;
+        color: #5cb601;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 8px;
+        outline: none;
+        text-align: center;
+        width: 240px;
+      }
+      input:focus {
+        background: #ddffbb;
+        border: 1.5px solid #52a301;
+      }
+      .btn {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px 185px;
+        padding: 20px;
+      }
+      button {
+        border: 3px solid #acfc5b;
+        background: white;
+        color: #65c505;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 15px 30px;
+        font-size: 20px;
+        outline: none;
+      }
+      button:hover {
+        background: #80ff00;
+        color: white;
+        border: 3px solid #80ff00;
+      }
+      .highlight {
+        border: 3px solid red;
+        color: red;
+      }
+
+      .highlight:hover {
+        background: red;
+        border: 3px solid red;
+        color: white;
+      }
+
+      .delete-icon {
+        color: red;
+        background: white;
+      }
+      .normal-icon {
+        background: white;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      a:hover,
+      a:active {
+        color: #acfc5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
